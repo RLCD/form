@@ -7,6 +7,7 @@
   * Perhaps we can tie into the Sheet, but unlikely
 * Figure out what goes on the left and right
   * Progress on the left?
+  * Selected item thumbnails on right?
 * Teams should be a radio, but need a hidden element then
 * Can we make the color chart clickable?
   * Background image on a table above it with links?
