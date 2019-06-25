@@ -9,16 +9,69 @@
 </head>
 
 <body>
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLScqPTHhXpxNXtm96dT_R6kVhM-OOCrsHQwXE5qM5LRW86Ddsg/formResponse" method="POST">
-        <input type="text" name="entry.1275796177" value="u/Zeranoe">
-        <input type="text" name="entry.354797309" value="Octane">
-        <input type="text" name="entry.289956341" value="'99 Nissan Skyline GT-R R34: 2Cool">
-        <input type="text" name="entry.466605838" value="Blue">
-        <input type="text" name="entry.1313414293" value="A1">
-        <input type="text" name="entry.1755825405" value="A1">
-        <input type="text" name="entry.1534186341" value="Alchemist">
-        <input type="submit" value="Submit">
-    </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4"><!--Left--></div>
+            <div class="col-sm-4">
+                <h1 class="mt-4">RLCD Form</h1>
+                <form
+                    action="https://docs.google.com/forms/d/e/1FAIpQLScqPTHhXpxNXtm96dT_R6kVhM-OOCrsHQwXE5qM5LRW86Ddsg/formResponse"
+                    method="POST">
+                    <div class="form-group">
+                        <label for="username">Reddit Username</label>
+                        <input name="entry.1275796177" type="text" class="form-control" id="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="body">Body</label>
+                        <select name="entry.354797309" class="form-control" id="body">
+                            <option>Octane</option>
+                            <option>Merc</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="decal">Decal</label>
+                        <select name="entry.289956341" class="form-control" id="decal">
+                            <option>Stripes</option>
+                            <option>20XX</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="team">Team</label>
+                        <select name="entry.466605838" class="form-control" id="team">
+                            <option>Blue</option>
+                            <option>Orange</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="primary">Primary Color</label>
+                        <input name="entry.1313414293" type="text" class="form-control" id="primary">
+                    </div>
+                    <div class="form-group">
+                        <label for="accent">Accent Color</label>
+                        <input name="entry.1755825405" type="text" class="form-control" id="accent">
+                    </div>
+                    <div class="form-group">
+                        <label for="wheel">Wheel</label>
+                        <select name="entry.1534186341" class="form-control" id="wheel">
+                            <option>Apex</option>
+                            <option>Zomba</option>
+                        </select>
+                    </div>
+                    <!-- Original form
+                    <input type="text" name="entry.1275796177" value="u/Zeranoe">
+                    <input type="text" name="entry.354797309" value="Octane">
+                    <input type="text" name="entry.289956341" value="'99 Nissan Skyline GT-R R34: 2Cool">
+                    <input type="text" name="entry.466605838" value="Blue">
+                    <input type="text" name="entry.1313414293" value="A1">
+                    <input type="text" name="entry.1755825405" value="A1">
+                    <input type="text" name="entry.1534186341" value="Alchemist">
+                    -->
+                    <input type="submit" class="btn btn-primary" value="Submit">
+                </form>
+            </div>
+            <div class="col-sm-4"><!--Right--></div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
