@@ -11,8 +11,8 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-sm-4"><!--Left--></div>
-            <div class="col-sm-4">
+            <div class="col-sm-2"><!--Left--></div>
+            <div class="col-sm-8">
                 <h1 class="mt-4">RLCD Form</h1>
                 <form
                     action="https://docs.google.com/forms/d/e/1FAIpQLScqPTHhXpxNXtm96dT_R6kVhM-OOCrsHQwXE5qM5LRW86Ddsg/formResponse"
@@ -22,44 +22,73 @@
                         <input name="entry.1275796177" type="text" class="form-control" id="username">
                     </div>
                     <div class="form-group">
-                        <label for="bodies">Body</label>
-                        <select name="entry.354797309" class="form-control" id="bodies"></select>
-                    </div>
-                    <div class="form-group">
-                        <label for="decals">Decal</label>
-                        <select name="entry.289956341" class="form-control" id="decals"></select>
-                    </div>
-                    <div class="form-group">
                         <label for="team">Team</label>
                         <select name="entry.466605838" class="form-control" id="team">
                             <option>Blue</option>
                             <option>Orange</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label for="primary">Primary Color</label>
-                        <input name="entry.1313414293" type="text" class="form-control" id="primary">
-                    </div>
-                    <div class="form-group">
-                        <label for="accent">Accent Color</label>
-                        <input name="entry.1755825405" type="text" class="form-control" id="accent">
-                    </div>
-                    <div class="form-group">
-                        <label for="wheels">Wheel</label>
-                        <select name="entry.1534186341" class="form-control" id="wheels"></select>
-                    </div>
-                    <div class="form-group">
-                        <label for="boosts">Boost</label>
-                        <select name="entry.1724363445" class="form-control" id="boosts"></select>
-                    </div>
-                    <div class="form-group">
-                        <label for="toppers">Topper</label>
-                        <select name="entry.190263880" class="form-control" id="toppers"></select>
+                    <ul class="nav nav-tabs" id="tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#body" role="tab">Body</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#decal" role="tab">Decal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#finish" role="tab">Paint Finish</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#wheel" role="tab">Wheels</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#boost" role="tab">Rocket Boost</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#topper" role="tab">Topper</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane show active pt-3" id="body" role="tabpanel">
+                            <div class="form-group">
+                                <select name="entry.354797309" class="form-control" id="bodies"></select>
+                            </div>
+                        </div>
+                        <div class="tab-pane pt-3" id="decal" role="tabpanel">
+                            <div class="form-group">
+                                <select name="entry.289956341" class="form-control" id="decals"></select>
+                            </div>
+                        </div>
+                        <div class="tab-pane pt-3" id="finish" role="tabpanel">
+                            <div class="form-group">
+                                <label for="primary">Primary Color</label>
+                                <input name="entry.1313414293" type="text" class="form-control" id="primary">
+                            </div>
+                            <div class="form-group">
+                                <label for="accent">Accent Color</label>
+                                <input name="entry.1755825405" type="text" class="form-control" id="accent">
+                            </div>
+                        </div>
+                        <div class="tab-pane pt-3" id="wheel" role="tabpanel">
+                            <div class="form-group">
+                                <select name="entry.1534186341" class="form-control" id="wheels"></select>
+                            </div>
+                        </div>
+                        <div class="tab-pane pt-3" id="boost" role="tabpanel">
+                            <div class="form-group">
+                                <select name="entry.1724363445" class="form-control" id="boosts"></select>
+                            </div>
+                        </div>
+                        <div class="tab-pane pt-3" id="topper" role="tabpanel">
+                            <div class="form-group">
+                                <select name="entry.190263880" class="form-control" id="toppers"></select>
+                            </div>
+                        </div>
                     </div>
                     <input type="submit" class="btn btn-primary" value="Submit">
                 </form>
             </div>
-            <div class="col-sm-4"><!--Right--></div>
+            <div class="col-sm-2"><!--Right--></div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
