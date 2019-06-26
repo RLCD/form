@@ -1,9 +1,18 @@
-function fill_dropdowns() {
+function fill_dropdown(slot) {
     var options = "";
-    for (var i = 0; i < items.bodies.length; i++) {
-        options += "<option>" + items.bodies[i].name + "</option>";
+    for (var i = 0; i < items[slot].length; i++) {
+        options += "<option>" + items[slot][i].name + "</option>";
     }
-    $("#body").html(options);
+    $("#" + slot).html(options);
 }
+
+function fill_dropdowns() {
+    fill_dropdown("bodies");
+    fill_dropdown("decals");
+    fill_dropdown("wheels");
+    fill_dropdown("boosts");
+    fill_dropdown("toppers");
+}
+
 
 fill_dropdowns();
