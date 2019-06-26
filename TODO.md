@@ -16,3 +16,5 @@
 * Probably should use a template engine for HTML generation
 * Further selection option should be hidden until we know the prerequisites
   * Maybe use BS Collapse?
+* Use a autocomplete dropdown
+  * jQuery has one, but does it work with bootstrap?
