@@ -6,8 +6,4 @@ https://rlcd.github.io/form/
 
 ## Creators
 
-**Zeranoe**
-
-* https://zeranoe.com
-* https://github.com/Zeranoe
-* https://www.reddit.com/user/Zeranoe
+* Zeranoe <zeranoe@gmail.com>
